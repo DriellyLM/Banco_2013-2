@@ -1,0 +1,2 @@
+class ContacorrentesController < InheritedResources::Base
+end

@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Conta:</strong>
+  <%= @contacorrente.conta %>
+</p>
+
+<p>
+  <strong>Saldo:</strong>
+  <%= @contacorrente.saldo %>
+</p>
+
+<%= link_to 'Edit', edit_contacorrente_path(@contacorrente) %> |
+<%= link_to 'Back', contacorrentes_path %>
