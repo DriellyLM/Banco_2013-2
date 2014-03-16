@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140316193847) do
+ActiveRecord::Schema.define(version: 20140316210144) do
 
   create_table "contacorrentes", force: true do |t|
     t.string   "conta"
@@ -19,5 +19,15 @@ ActiveRecord::Schema.define(version: 20140316193847) do
     t.datetime "created_at"
     t.datetime "updated_at"
   end
+
+  create_table "contapoupancas", force: true do |t|
+    t.string   "sequencial"
+    t.string   "saldo"
+    t.integer  "contacorrente_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "contapoupancas", ["contacorrente_id"], name: "index_contapoupancas_on_contacorrente_id"
 
 end

@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Sequencial:</strong>
+  <%= @contapoupanca.sequencial %>
+</p>
+
+<p>
+  <strong>Saldo:</strong>
+  <%= @contapoupanca.saldo %>
+</p>
+
+<p>
+  <strong>Contacorrente:</strong>
+  <%= @contapoupanca.contacorrente.conta %>
+</p>
+
+<%= link_to 'Edit', edit_contapoupanca_path(@contapoupanca) %> |
+<%= link_to 'Back', contapoupancas_path %>

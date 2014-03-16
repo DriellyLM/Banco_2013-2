@@ -1,4 +1,6 @@
 Banco::Application.routes.draw do
+  resources :contapoupancas
+
   resources :contacorrentes
 
   # The priority is based upon order of creation: first created -> highest priority.

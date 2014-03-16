@@ -1,0 +1,4 @@
+class Contapoupanca < ActiveRecord::Base
+  belongs_to :contacorrente
+ # attr_accessible :contacorrente_id, :sequencial, :saldo
+end
