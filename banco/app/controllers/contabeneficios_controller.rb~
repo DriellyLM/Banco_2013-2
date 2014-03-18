@@ -1,0 +1,2 @@
+class ContabeneficiosController < InheritedResources::Base
+end

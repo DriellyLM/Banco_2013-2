@@ -11,7 +11,17 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140318040650) do
+ActiveRecord::Schema.define(version: 20140318043306) do
+
+  create_table "contabeneficios", force: true do |t|
+    t.string   "conta"
+    t.string   "saldo"
+    t.integer  "pessoafisica_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "contabeneficios", ["pessoafisica_id"], name: "index_contabeneficios_on_pessoafisica_id"
 
   create_table "contacorrentes", force: true do |t|
     t.string   "conta"

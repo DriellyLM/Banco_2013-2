@@ -1,4 +1,6 @@
 Banco::Application.routes.draw do
+  resources :contabeneficios
+
   resources :pessoafisicas
 
   resources :emprestimos

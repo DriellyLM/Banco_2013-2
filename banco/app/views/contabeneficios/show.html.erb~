@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Conta Beneficio:</strong>
+  <%= @contabeneficio.conta %>
+</p>
+
+<p>
+  <strong>Saldo:</strong>
+  <%= @contabeneficio.saldo %>
+</p>
+
+<p>
+  <strong>Pessoafisica:</strong>
+  <%= @contabeneficio.pessoafisica.nome %>
+</p>
+
+<%= link_to 'Edit', edit_contabeneficio_path(@contabeneficio) %> |
+<%= link_to 'Back', contabeneficios_path %>
