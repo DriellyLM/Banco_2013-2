@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140318033302) do
+ActiveRecord::Schema.define(version: 20140318023949) do
 
   create_table "contacorrentes", force: true do |t|
     t.string   "conta"
@@ -29,16 +29,5 @@ ActiveRecord::Schema.define(version: 20140318033302) do
   end
 
   add_index "contapoupancas", ["contacorrente_id"], name: "index_contapoupancas_on_contacorrente_id"
-
-  create_table "emprestimos", force: true do |t|
-    t.string   "datacontrato"
-    t.string   "valorcontratado"
-    t.string   "numeroparcelas"
-    t.integer  "contacorrente_id"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
-  add_index "emprestimos", ["contacorrente_id"], name: "index_emprestimos_on_contacorrente_id"
 
 end

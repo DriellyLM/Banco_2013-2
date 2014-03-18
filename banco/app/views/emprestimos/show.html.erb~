@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Data Contrato:</strong>
+  <%= @emprestimo.datacontrato %>
+</p>
+
+<p>
+  <strong>Valor Contratado:</strong>
+  <%= @emprestimo.valorcontratado %>
+</p>
+
+<p>
+  <strong>Numero Parcelas:</strong>
+  <%= @emprestimo.numeroparcelas %>
+</p>
+
+<p>
+  <strong>Conta Corrente:</strong>
+  <%= @emprestimo.contacorrente.conta %>
+</p>
+
+<%= link_to 'Edit', edit_emprestimo_path(@emprestimo) %> |
+<%= link_to 'Back', emprestimos_path %>

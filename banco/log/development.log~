@@ -1,0 +1,73 @@
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-16 16:26:59 -0300
+Processing by Rails::WelcomeController#index as HTML
+  Rendered /home/driellylm/.rvm/gems/ruby-2.0.0-p353@bancos/gems/railties-4.0.2/lib/rails/templates/rails/welcome/index.html.erb (2.0ms)
+Completed 200 OK in 35ms (Views: 10.0ms | ActiveRecord: 0.0ms)
+  [1m[36m (176.9ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [1m[35m (154.2ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateContacorrentes (20140316193847)
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (1.0ms)[0m  [1mCREATE TABLE "contacorrentes" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "conta" varchar(255), "saldo" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20140316193847"]]
+  [1m[36m (168.9ms)[0m  [1mcommit transaction[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (152.3ms)[0m  [1mCREATE TABLE "contacorrentes" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "conta" varchar(255), "saldo" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35m (132.7ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) 
+  [1m[36m (145.7ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35m (0.4ms)[0m  SELECT version FROM "schema_migrations"
+  [1m[36m (143.1ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20140316193847')[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateContapoupancas (20140316210144)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.4ms)[0m  [1mCREATE TABLE "contapoupancas" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "sequencial" varchar(255), "saldo" varchar(255), "contacorrente_id" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35m (0.2ms)[0m  CREATE INDEX "index_contapoupancas_on_contacorrente_id" ON "contapoupancas" ("contacorrente_id")
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20140316210144"]]
+  [1m[35m (184.6ms)[0m  commit transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (152.0ms)[0m  CREATE TABLE "contacorrentes" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "conta" varchar(255), "saldo" varchar(255), "created_at" datetime, "updated_at" datetime) 
+  [1m[36m (153.1ms)[0m  [1mCREATE TABLE "contapoupancas" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "sequencial" varchar(255), "saldo" varchar(255), "contacorrente_id" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35m (154.4ms)[0m  CREATE INDEX "index_contapoupancas_on_contacorrente_id" ON "contapoupancas" ("contacorrente_id")
+  [1m[36m (153.7ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [1m[35m (154.4ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36m (0.3ms)[0m  [1mSELECT version FROM "schema_migrations"[0m
+  [1m[35m (154.2ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20140316210144')
+  [1m[36m (133.0ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20140316193847')[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateEmprestimos (20140317225345)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.5ms)[0m  [1mCREATE TABLE "emprestimos" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "datadocontrato" varchar(255), "valorcontratado" varchar(255), "numerodeparcelas" varchar(255), "contacorrente_id" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35m (0.2ms)[0m  CREATE INDEX "index_emprestimos_on_contacorrente_id" ON "emprestimos" ("contacorrente_id")
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20140317225345"]]
+  [1m[35m (221.7ms)[0m  commit transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (128.8ms)[0m  CREATE TABLE "contacorrentes" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "conta" varchar(255), "saldo" varchar(255), "created_at" datetime, "updated_at" datetime) 
+  [1m[36m (120.1ms)[0m  [1mCREATE TABLE "contapoupancas" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "sequencial" varchar(255), "saldo" varchar(255), "contacorrente_id" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35m (143.5ms)[0m  CREATE INDEX "index_contapoupancas_on_contacorrente_id" ON "contapoupancas" ("contacorrente_id")
+  [1m[36m (142.1ms)[0m  [1mCREATE TABLE "emprestimos" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "datadocontrato" varchar(255), "valorcontratado" varchar(255), "numerodeparcelas" varchar(255), "contacorrente_id" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35m (155.8ms)[0m  CREATE INDEX "index_emprestimos_on_contacorrente_id" ON "emprestimos" ("contacorrente_id")
+  [1m[36m (120.7ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [1m[35m (110.5ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36m (0.4ms)[0m  [1mSELECT version FROM "schema_migrations"[0m
+  [1m[35m (109.9ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20140317225345')
+  [1m[36m (122.0ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20140316193847')[0m
+  [1m[35m (144.1ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20140316210144')
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateEmprestimos (20140318005412)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.2ms)[0m  [1mCREATE TABLE "emprestimos" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "datacontrato" varchar(255), "valorcontratado" varchar(255), "numeroparcelas" varchar(255), "contacorrente_id" integer, "created_at" datetime, "updated_at" datetime) [0m
+SQLite3::SQLException: table "emprestimos" already exists: CREATE TABLE "emprestimos" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "datacontrato" varchar(255), "valorcontratado" varchar(255), "numeroparcelas" varchar(255), "contacorrente_id" integer, "created_at" datetime, "updated_at" datetime) 
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateEmprestimos (20140318010245)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.2ms)[0m  [1mCREATE TABLE "emprestimos" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "datacontrato" varchar(255), "valorcontratado" varchar(255), "numeroparcelas" varchar(255), "contacorrente_id" integer, "created_at" datetime, "updated_at" datetime) [0m
+SQLite3::SQLException: table "emprestimos" already exists: CREATE TABLE "emprestimos" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "datacontrato" varchar(255), "valorcontratado" varchar(255), "numeroparcelas" varchar(255), "contacorrente_id" integer, "created_at" datetime, "updated_at" datetime) 
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateEmprestimos (20140318010245)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.2ms)[0m  [1mCREATE TABLE "emprestimos" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "datacontrato" varchar(255), "valorcontratado" varchar(255), "numeroparcelas" varchar(255), "contacorrente_id" integer, "created_at" datetime, "updated_at" datetime) [0m
+SQLite3::SQLException: table "emprestimos" already exists: CREATE TABLE "emprestimos" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "datacontrato" varchar(255), "valorcontratado" varchar(255), "numeroparcelas" varchar(255), "contacorrente_id" integer, "created_at" datetime, "updated_at" datetime) 
+  [1m[35m (0.1ms)[0m  rollback transaction

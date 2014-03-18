@@ -1,0 +1,7 @@
+= semantic_form_for [@emprestimo] do |form|
+  
+  = form.input :datacontrato, :label => 'Data Contrato'
+  = form.input :valorcontratado, :label => 'Valor Contratado'
+  = form.input :numeroparcelas, :label => 'Numero Parcelas'
+  = form.input :contacorrente, :member_label => :conta, :label => 'Conta Corrente' 
+  = form.submit 'Salvar'

@@ -1,0 +1,33 @@
+<%= form_for(@emprestimo) do |f| %>
+  <% if @emprestimo.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@emprestimo.errors.count, "error") %> prohibited this emprestimo from being saved:</h2>
+
+      <ul>
+      <% @emprestimo.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :datacontrato %><br>
+    <%= f.text_field :datacontrato %>
+  </div>
+  <div class="field">
+    <%= f.label :valorcontratado %><br>
+    <%= f.text_field :valorcontratado %>
+  </div>
+  <div class="field">
+    <%= f.label :numeroparcelas %><br>
+    <%= f.text_field :numeroparcelas %>
+  </div>
+  <div class="field">
+    <%= f.label :contacorrente_id %><br>
+    <%= f.text_field :contacorrente_id %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

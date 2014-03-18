@@ -1,0 +1,33 @@
+<h1>Listing emprestimos</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Datacontrato</th>
+      <th>Valorcontratado</th>
+      <th>Numeroparcelas</th>
+      <th>Contacorrente</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @emprestimos.each do |emprestimo| %>
+      <tr>
+        <td><%= emprestimo.datacontrato %></td>
+        <td><%= emprestimo.valorcontratado %></td>
+        <td><%= emprestimo.numeroparcelas %></td>
+        <td><%= emprestimo.contacorrente.conta %></td>
+        <td><%= link_to 'Show', emprestimo %></td>
+        <td><%= link_to 'Edit', edit_emprestimo_path(emprestimo) %></td>
+        <td><%= link_to 'Excluir', emprestimo, method: :delete, data: { confirm: 'Você tem certeza?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Emprestimo', new_emprestimo_path %>

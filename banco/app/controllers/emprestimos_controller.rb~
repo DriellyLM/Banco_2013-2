@@ -1,0 +1,2 @@
+class EmprestimosController < InheritedResources::Base
+end
