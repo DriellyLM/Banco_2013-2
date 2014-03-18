@@ -1,0 +1,14 @@
+= semantic_form_for [@pessoafisica] do |form|
+  
+  = form.input :nome, :label => 'Nome'
+  = form.input :datanascimento, :label => 'Data Nascimento'
+  = form.input :endereco, :label => 'Endereco'
+  = form.input :numero, :label => 'Numero'
+  = form.input :complemento, :label => 'Complemento'
+  = form.input :bairro, :label => 'Bairro'
+  = form.input :cidade, :label => 'Cidade'
+  = form.input :estado, :label => 'Estado'
+  = form.input :telefone, :label => 'Telefone'
+  = form.input :cpf, :label => 'Cpf'
+  = form.input :contacorrente, :member_label => :conta, :label => 'Conta Corrente' 
+  = form.submit 'Salvar'

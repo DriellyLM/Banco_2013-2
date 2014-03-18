@@ -1,0 +1,47 @@
+<h1>Listing pessoafisicas</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Nome</th>
+      <th>Datanascimento</th>
+      <th>Endereco</th>
+      <th>Numero</th>
+      <th>Complemento</th>
+      <th>Bairro</th>
+      <th>Cidade</th>
+      <th>Estado</th>
+      <th>Telefone</th>
+      <th>Cpf</th>
+      <th>Contacorrente</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @pessoafisicas.each do |pessoafisica| %>
+      <tr>
+        <td><%= pessoafisica.nome %></td>
+        <td><%= pessoafisica.datanascimento %></td>
+        <td><%= pessoafisica.endereco %></td>
+        <td><%= pessoafisica.numero %></td>
+        <td><%= pessoafisica.complemento %></td>
+        <td><%= pessoafisica.bairro %></td>
+        <td><%= pessoafisica.cidade %></td>
+        <td><%= pessoafisica.estado %></td>
+        <td><%= pessoafisica.telefone %></td>
+        <td><%= pessoafisica.cpf %></td>
+        <td><%= pessoafisica.contacorrente.conta %></td>
+        <td><%= link_to 'Show', pessoafisica %></td>
+        <td><%= link_to 'Edit', edit_pessoafisica_path(pessoafisica) %></td>
+        <td><%= link_to 'Excluir', pessoafisica, method: :delete, data: { confirm: 'Você tem certeza?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Pessoafisica', new_pessoafisica_path %>

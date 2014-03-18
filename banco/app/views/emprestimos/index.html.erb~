@@ -22,7 +22,7 @@
         <td><%= emprestimo.contacorrente.conta %></td>
         <td><%= link_to 'Show', emprestimo %></td>
         <td><%= link_to 'Edit', edit_emprestimo_path(emprestimo) %></td>
-        <td><%= link_to 'Destroy', emprestimo, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'Excluir', emprestimo, method: :delete, data: { confirm: 'Você tem certeza?' } %></td>
       </tr>
     <% end %>
   </tbody>

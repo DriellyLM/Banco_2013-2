@@ -1,0 +1,59 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Nome:</strong>
+  <%= @pessoafisica.nome %>
+</p>
+
+<p>
+  <strong>Data Nascimento:</strong>
+  <%= @pessoafisica.datanascimento %>
+</p>
+
+<p>
+  <strong>Endereco:</strong>
+  <%= @pessoafisica.endereco %>
+</p>
+
+<p>
+  <strong>Numero:</strong>
+  <%= @pessoafisica.numero %>
+</p>
+
+<p>
+  <strong>Complemento:</strong>
+  <%= @pessoafisica.complemento %>
+</p>
+
+<p>
+  <strong>Bairro:</strong>
+  <%= @pessoafisica.bairro %>
+</p>
+
+<p>
+  <strong>Cidade:</strong>
+  <%= @pessoafisica.cidade %>
+</p>
+
+<p>
+  <strong>Estado:</strong>
+  <%= @pessoafisica.estado %>
+</p>
+
+<p>
+  <strong>Telefone:</strong>
+  <%= @pessoafisica.telefone %>
+</p>
+
+<p>
+  <strong>Cpf:</strong>
+  <%= @pessoafisica.cpf %>
+</p>
+
+<p>
+  <strong>Contacorrente:</strong>
+  <%= @pessoafisica.contacorrente.conta %>
+</p>
+
+<%= link_to 'Edit', edit_pessoafisica_path(@pessoafisica) %> |
+<%= link_to 'Back', pessoafisicas_path %>

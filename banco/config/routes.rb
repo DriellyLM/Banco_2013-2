@@ -1,4 +1,6 @@
 Banco::Application.routes.draw do
+  resources :pessoafisicas
+
   resources :emprestimos
 
   resources :contapoupancas
