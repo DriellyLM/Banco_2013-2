@@ -6,7 +6,7 @@
 </p>
 
 <p>
-  <strong>Datanascimento:</strong>
+  <strong>Data Nascimento:</strong>
   <%= @pessoafisica.datanascimento %>
 </p>
 
