@@ -17,7 +17,7 @@
       <tr>
         <td><%= contapoupanca.sequencial %></td>
         <td><%= contapoupanca.saldo %></td>
-        <td><%= contapoupanca.contacorrente %></td>
+        <td><%= contapoupanca.contacorrente.to_s %></td>
         <td><%= link_to 'Show', contapoupanca %></td>
         <td><%= link_to 'Edit', edit_contapoupanca_path(contapoupanca) %></td>
         <td><%= link_to 'Excluir', contapoupanca, method: :delete, data: { confirm: 'Você tem certeza?' } %></td>

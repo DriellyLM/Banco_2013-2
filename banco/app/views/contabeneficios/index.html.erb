@@ -17,7 +17,7 @@
       <tr>
         <td><%= contabeneficio.conta %></td>
         <td><%= contabeneficio.saldo %></td>
-        <td><%= contabeneficio.pessoafisica.nome %></td>
+        <td><%= contabeneficio.pessoafisica %></td>
         <td><%= link_to 'Show', contabeneficio %></td>
         <td><%= link_to 'Edit', edit_contabeneficio_path(contabeneficio) %></td>
         <td><%= link_to 'Excluir', contabeneficio, method: :delete, data: { confirm: 'Você tem certeza?' } %></td>

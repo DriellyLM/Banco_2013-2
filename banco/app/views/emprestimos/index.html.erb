@@ -19,7 +19,7 @@
         <td><%= emprestimo.datacontrato %></td>
         <td><%= emprestimo.valorcontratado %></td>
         <td><%= emprestimo.numeroparcelas %></td>
-        <td><%= emprestimo.contacorrente.conta %></td>
+        <td><%= emprestimo.contacorrente %></td>
         <td><%= link_to 'Show', emprestimo %></td>
         <td><%= link_to 'Edit', edit_emprestimo_path(emprestimo) %></td>
         <td><%= link_to 'Excluir', emprestimo, method: :delete, data: { confirm: 'Você tem certeza?' } %></td>

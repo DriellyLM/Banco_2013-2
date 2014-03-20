@@ -3,41 +3,26 @@ require 'spec_helper'
 
 feature 'gerenciar pessoa fisica' do
 
-  scenario 'incluir pessoa fisica' do #, :javascript => true  do
-	
+    scenario 'incluir pessoa fisica' do #, :javascript => true  do
     contacorrente = FactoryGirl.create(:contacorrente, :conta => '1234-0')
-
     visit new_pessoafisica_path
-
     preencher_e_verificar_pessoafisica
-   
-
-  end
+    end
 
   scenario 'alterar pessoa fisica' do #, :javascript => true  do
 
     contacorrente = FactoryGirl.create(:contacorrente, :conta => '1234-0')
-
     pessoafisica = FactoryGirl.create(:pessoafisica, :contacorrente => contacorrente)
-
     visit edit_pessoafisica_path(pessoafisica)
-
     preencher_e_verificar_pessoafisica
-
-
   end
 
   scenario 'excluir pessoa fisica' do #, :javascript => true  do
 
     contacorrente = FactoryGirl.create(:contacorrente, :conta => '1234-0')
-
     pessoafisica = FactoryGirl.create(:pessoafisica, :contacorrente => contacorrente)
-
     visit pessoafisicas_path
-
     click_link 'Excluir'
-    
-    
   end
 
 

@@ -8,7 +8,7 @@ Released for free under a Creative Commons Attribution 2.5 License
 body {
 	margin: 0;
 	padding: 0;
-	background: #EFEFEF url(images/main-bg.jpg) repeat;
+	background: #EFEFEF url("main-bg.jpg") repeat center;
 	font-family: 'Oswald', sans-serif;
 	font-size: 16px;
 	font-weight: 200;
@@ -52,7 +52,8 @@ a:hover {
 
 #wrapper {
 	padding: 0;
-	background: url(http://localhost:3000/assets/main-bg.jpg) no-repeat center top;
+	background: url("main-bg.jpg") repeat center;
+	
 }
 
 /* Header */
@@ -148,13 +149,13 @@ a:hover {
 
 #menu {
 	overflow: hidden;
-	width: 1000px;
-	padding: 0px 0px;
+	width: 900px;
+	padding: 30px 30px;
 	margin: 0px auto 30px auto;
-	background: #064C8A;
 	border-radius: 20px 0px 20px 0px;
 	font-size: 20px;
 	color: #000000;
+	background-image: url("pics01.jpg");
 }
 
 #menu ul {
@@ -171,23 +172,24 @@ a:hover {
 
 #menu a {
 	display: block;
-	padding: 15px 40px 15px 40px;
+	padding: 15px 15px 15px 15px;
 	text-decoration: none;
 	text-transform: uppercase;
 	text-align: center;
 	font-size: 16px;
 	font-weight: 200;
-	color: #FFFFFF;
+	color: white;
 	border: none;
 }
 
-#menu a:hover, #menu .current_page_item a {
-	text-decoration: none;
+#menu .current_page_item a {
+/*	background: #05457D;*/
+	color: white;
 }
 
-#menu .current_page_item a {
-	background: #05457D;
-	color: #FFFFFF;
+#menu a:hover, #menu .current_page_item a:hover {
+	text-decoration: none;
+	color: navy;
 }
 
 #menu .last {
