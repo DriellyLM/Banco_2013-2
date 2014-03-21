@@ -1,4 +1,4 @@
-<h1>Adicionar Conta Benefício</h1>
+<h1>Adicionar Conta</h1>
 
 <%= render 'form' %>
 

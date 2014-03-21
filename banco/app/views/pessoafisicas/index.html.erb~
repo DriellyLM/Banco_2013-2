@@ -1,19 +1,19 @@
-<h1>Listing pessoafisicas</h1>
+<h1>Relação de Pessoas Físicas:</h1>
 
 <table>
   <thead>
     <tr>
       <th>Nome</th>
-      <th>Datanascimento</th>
-      <th>Endereco</th>
-      <th>Numero</th>
+      <th>Data de Nascimento</th>
+      <th>Endereço</th>
+      <th>Número</th>
       <th>Complemento</th>
       <th>Bairro</th>
       <th>Cidade</th>
       <th>Estado</th>
       <th>Telefone</th>
-      <th>Cpf</th>
-      <th>Contacorrente</th>
+      <th>CPF</th>
+      <th>Conta Corrente</th>
       <th></th>
       <th></th>
       <th></th>
@@ -33,7 +33,7 @@
         <td><%= pessoafisica.estado %></td>
         <td><%= pessoafisica.telefone %></td>
         <td><%= pessoafisica.cpf %></td>
-        <td><%= pessoafisica.contacorrente.conta %></td>
+        <td><%= pessoafisica.contacorrente %></td>
         <td><%= link_to 'Show', pessoafisica %></td>
         <td><%= link_to 'Edit', edit_pessoafisica_path(pessoafisica) %></td>
         <td><%= link_to 'Excluir', pessoafisica, method: :delete, data: { confirm: 'Você tem certeza?' } %></td>

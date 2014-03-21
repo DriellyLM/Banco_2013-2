@@ -1,4 +1,4 @@
-<h1>Adicionar Conta Poupança</h1>
+<h1>Adicionar Conta Poupanca</h1>
 
 <%= render 'form' %>
 

@@ -52,7 +52,7 @@
 
 <p>
   <strong>Contacorrente:</strong>
-  <%= @pessoafisica.contacorrente %>
+  <%= @pessoafisica.contacorrente.conta %>
 </p>
 
 <%= link_to 'Edit', edit_pessoafisica_path(@pessoafisica) %> |

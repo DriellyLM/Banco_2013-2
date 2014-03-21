@@ -1,0 +1,6 @@
+<h1>Editing contapoupanca</h1>
+
+<%= render 'form' %>
+
+<%= link_to 'Show', @contapoupanca %> |
+<%= link_to 'Back', contapoupancas_path %>

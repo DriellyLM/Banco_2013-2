@@ -1,11 +1,11 @@
-<h1>Listing contapoupancas</h1>
+<h1>Relação de Contas Poupança:</h1>
 
 <table>
   <thead>
     <tr>
       <th>Sequencial</th>
       <th>Saldo</th>
-      <th>Contacorrente</th>
+      <th>Conta Corrente</th>
       <th></th>
       <th></th>
       <th></th>
@@ -18,8 +18,8 @@
         <td><%= contapoupanca.sequencial %></td>
         <td><%= contapoupanca.saldo %></td>
         <td><%= contapoupanca.contacorrente %></td>
-        <td><%= link_to 'Show', contapoupanca %></td>
-        <td><%= link_to 'Edit', edit_contapoupanca_path(contapoupanca) %></td>
+        <td><%= link_to 'Ver', contapoupanca %></td>
+        <td><%= link_to 'Editar', edit_contapoupanca_path(contapoupanca) %></td>
         <td><%= link_to 'Excluir', contapoupanca, method: :delete, data: { confirm: 'Você tem certeza?' } %></td>
       </tr>
     <% end %>
@@ -28,4 +28,4 @@
 
 <br>
 
-<%= link_to 'New Contapoupanca', new_contapoupanca_path %>
+<%= link_to 'Adicionar Conta Poupança', new_contapoupanca_path %>

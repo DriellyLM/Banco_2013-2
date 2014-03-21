@@ -49,7 +49,7 @@ Released   : 20121012
 		
 		<div id="logo">
 			<h1><a href="#">Banco Mercantil</a></h1>
-			<p>Bom atendimento e ótimos rendimentos é a nossa missão.</p>
+			<p>Bom atendimento e ótimos rendimentos é a nossa satisfação.</p>
 		</div>
 		
 	</div>
@@ -61,7 +61,7 @@ Released   : 20121012
 	<div id="menu">
 	
 		<ul>
-			<li class="current_page_item"><a href="/">Página Inicial</a></li>
+			<li class="current_page_item"><a href="/home/index">Página Inicial</a></li>
 			<li><%= link_to 'Pessoa Física',pessoafisicas_path %></li>
 			<li><%= link_to 'Conta Corrente',contacorrentes_path %></li>
 			<li><%= link_to 'Conta Poupança',contapoupancas_path %></li>
@@ -75,6 +75,34 @@ Released   : 20121012
 	<!-- <div id=f"banner"><%= image_tag "pics01.jpg", :size => "820x350" %></div> -->
 		
 	<%= yield %>
+	
+	<div id="two-columns">
+		<div id="col1">
+			<p><a href="#" class="link-style2">Bem vindo!</a></p>
+			<p>​O Mercantil do Brasil busca progredir, modernizar-se e crescer, sempre, mantendo-se fiel aos princípios que construíram sua tradição histórica. Já tendo consolidado posição de destaque no mercado nacional, além de  respeitabilidade na comunidade econômico-financeira, a instituição busca a permanente evolução, adequando-se aos novos tempos, revigorando seu posicionamento estratégico, aperfeiçoando seus mecanismos e dinamizando suas atividades. Cordialidade, simplicidade e honradez são as bases da atuação do Mercantil do Brasil, que reafirma a convicção de se desenvolver junto à sociedade, em consonância com as suas necessidades e urgências. </p>
+		</div>
+		<!--<div id="col2"><img src="images/pics02.jpg" width="320" height="260" /> </div>-->
+	</div>
+	
+	<!--<div id="banner" class="container"><%= image_tag "pics.jpg", :size => "820x350" %> </div>-->
+	<div id="box1"> <a href="#"><%= image_tag "pics.jpg", :size => "250x300" %> </a></div>
+	
+	
+	<div id="three-columns">
+		<div id="column1">
+			<h2><strong>Missão</strong></h2>
+			<p>Gerar soluções financeiras, com excelência e diferencial no relacionamento, remuneração adequada ao capital societário, recompensa justa ao capital humano e atuação socioambiental responsável.</p>
+		</div>
+		<div id="column2">
+			<h2><strong>Visão</strong></h2>
+			<p>Perpetuar o negócio com segurança, rentabilidade e competitividade.</p>
+		</div>
+		<div id="column3">
+			<h2><strong>Proposta de Valor</strong></h2>
+			<p>Prestar soluções financeiras com simplicidade, eficácia e diferencial no relacionamento.</p>
+		</div>
+	</div>
+	
 		
 	<div id="footer">
 		<p>Copyright (c) 2012 Sitename.com. All rights reserved. Design by <a href="http://www.freecsstemplates.org/"rel="nofollow">FreeCSSTemplates.org</a>. Photos by <a href="http://fotogrph.com/">Fotogrph</a>.</p>

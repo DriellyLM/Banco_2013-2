@@ -10,5 +10,5 @@
   <%= @contacorrente.saldo %>
 </p>
 
-<%= link_to 'Editar', edit_contacorrente_path(@contacorrente) %> |
-<%= link_to 'Voltar', contacorrentes_path %>
+<%= link_to 'Edit', edit_contacorrente_path(@contacorrente) %> |
+<%= link_to 'Back', contacorrentes_path %>

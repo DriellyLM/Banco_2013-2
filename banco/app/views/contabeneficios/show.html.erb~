@@ -1,7 +1,7 @@
 <p id="notice"><%= notice %></p>
 
 <p>
-  <strong>Conta Beneficio:</strong>
+  <strong>Conta:</strong>
   <%= @contabeneficio.conta %>
 </p>
 

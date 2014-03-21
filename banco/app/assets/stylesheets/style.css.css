@@ -8,7 +8,7 @@ Released for free under a Creative Commons Attribution 2.5 License
 body {
 	margin: 0;
 	padding: 0;
-	background: #EFEFEF url("main-bg.jpg") repeat center;
+	background: #EFEFEF url("fundo.jpg") repeat center;
 	font-family: 'Oswald', sans-serif;
 	font-size: 16px;
 	font-weight: 200;
@@ -52,7 +52,7 @@ a:hover {
 
 #wrapper {
 	padding: 0;
-	background: url("main-bg.jpg") repeat center;
+	background: url("fundo.jpg") repeat center;
 	
 }
 
@@ -151,7 +151,7 @@ a:hover {
 	overflow: hidden;
 	width: 900px;
 	padding: 30px 30px;
-	margin: 0px auto 30px auto;
+	margin: 10px auto 20px auto;
 	border-radius: 20px 0px 20px 0px;
 	font-size: 20px;
 	color: #000000;
@@ -304,7 +304,7 @@ a:hover {
 }
 
 #sidebar li a {
-	background: url(http://localhost:3000/assets/main-bg.gif) no-repeat left 6px;
+	background: url(http://localhost:3000/assets/fundo.gif) no-repeat left 6px;
 }
 
 #sidebar li li span {
@@ -469,14 +469,19 @@ a:hover {
 }
 
 #two-columns #col1 {
-	float: right;
-	width: 640px;
-	color: #000000;
+	float: left;
+	width: 600px;
+	color: black;
 }
 
 #two-columns #col2 {
-	float: left;
+	float: right;
 	width: 320px;
+	/*overflow: hidden;*/
+	width: 900px;
+	padding: 30px 30px;
+	margin: 10px auto 20px auto;
+	background: #EFEFEF url("pics.jpg");
 }
 
 #two-columns h2 {

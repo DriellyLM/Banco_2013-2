@@ -1,4 +1,4 @@
-<h1>Listing contacorrentes</h1>
+<h1>Relação de Contas Correntes:</h1>
 
 <table>
   <thead>
@@ -18,7 +18,7 @@
         <td><%= contacorrente.saldo %></td>
         <td><%= link_to 'Show', contacorrente %></td>
         <td><%= link_to 'Edit', edit_contacorrente_path(contacorrente) %></td>
-        <td><%= link_to 'Destroy', contacorrente, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'Excluir', contacorrente, method: :delete, data: { confirm: 'Você tem certeza?' } %></td>
       </tr>
     <% end %>
   </tbody>

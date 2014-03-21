@@ -1,12 +1,12 @@
-<h1>Listing emprestimos</h1>
+<h1>Relação de Empréstimos:</h1>
 
 <table>
   <thead>
     <tr>
-      <th>Datacontrato</th>
-      <th>Valorcontratado</th>
-      <th>Numeroparcelas</th>
-      <th>Contacorrente</th>
+      <th>Data do Contrato</th>
+      <th>Valor Contratado</th>
+      <th>Numero de Parcelas</th>
+      <th>Conta Corrente</th>
       <th></th>
       <th></th>
       <th></th>
@@ -20,8 +20,8 @@
         <td><%= emprestimo.valorcontratado %></td>
         <td><%= emprestimo.numeroparcelas %></td>
         <td><%= emprestimo.contacorrente %></td>
-        <td><%= link_to 'Show', emprestimo %></td>
-        <td><%= link_to 'Edit', edit_emprestimo_path(emprestimo) %></td>
+        <td><%= link_to 'Ver', emprestimo %></td>
+        <td><%= link_to 'Editar', edit_emprestimo_path(emprestimo) %></td>
         <td><%= link_to 'Excluir', emprestimo, method: :delete, data: { confirm: 'Você tem certeza?' } %></td>
       </tr>
     <% end %>
@@ -30,4 +30,4 @@
 
 <br>
 
-<%= link_to 'New Emprestimo', new_emprestimo_path %>
+<%= link_to 'Adicionar Empréstimo', new_emprestimo_path %>
